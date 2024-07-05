@@ -16,29 +16,28 @@ locally.
 
 ## Installation
 
-### 1. Installation steps
+### 1. Clone the Repository
+`
+git clone git@github.com:HiredLabs-inc/boot-camp-demo-app.git && cd mysite/
+`
 
-### Linux/MacOS
-#### 1.1. Clone the repository
-
-
-#### 1.2. Create a .env file
+### 2. Create a .env file
 Set a DJANGO_SECRET_KEY variable to any string of random characters.
 
-#### 1.3 Configure PythonAnywhere
+### 3. Configure PythonAnywhere
 Navigate the "Web" section of your PythonAnywhere account.
 
-##### 1.3.1 Create an App
+#### 3.1. Create an App
 Choose the latest version of Python, and "manual configuration" for the framework.
 
 
-##### 1.3.2 Configure wsgi.py
+#### 3.2. Configure wsgi.py
 Under "Code" in the "Web" section of PythonAnywhere click the link to open the
 wsgi.py file, comment out the pure wsgi app, and uncomment the Django app.
 
 Save and close the wsgi.py file.
 
-##### 1.3.3 Set paths
+#### 3.3. Set paths
 
 Under "Code" in the "Web" section of PythonAnywhere add the path
 "/home/username/mysite" to both the source code and the working directories.
@@ -50,7 +49,7 @@ url to "/static/" and the path to "/home/username/mysite/static_main/".
 
 Optionally turn on the "Force HTTPS" toggle towards the bottom of the page.
 
-#### 1.4. Reload and Refresh
+#### 3.4. Reload and Refresh
 Reload the source code on your PythonAnywhere server by clicking the big, green
 button towards the top of the "Web" section.
 
